@@ -10,6 +10,7 @@ const MathLib = {
   LN10: Math.LN10,                // 10の自然対数
   LOG2E: Math.LOG2E,              // log2(e)
   LOG10E: Math.LOG10E,            // log10(e)
+  
 
   // 黄金比（PHI）
   PHI: (1 + Math.sqrt(5)) / 2,    // 黄金比
@@ -58,7 +59,10 @@ const MathLib = {
       };
     }
   },
-
+  ceil: (x) => Math.ceil(x),
+  floor: (x) => Math.floor(x),
+  imul: (x) => Math.imul(x),
+  pow10: (y) => Math.pow(10, y),
   fictionum: {
     // alpha
     alpha: () => {
@@ -90,5 +94,6 @@ const MathLib = {
   tan: (x) => Math.tan(x),
 
   // 平方根
-  sqrt: (x) => Math.sqrt(x)
+  sqrt: (x) => Math.sqrt(x),
+  cbrt: (x) => Math.cbrt(x)
 };
